@@ -53,6 +53,10 @@ for i_episode in range(20):
             Num    Action
              0     Push cart to the left
              1     Push cart to the right
+             
+        Angle at which to fail the episode
+            self.theta_threshold_radians = 12 * 2 * math.pi / 360
+            self.x_threshold = 2.4
         """
         
         observation, reward, done, info = env.step(action)
